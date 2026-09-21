@@ -54,7 +54,7 @@ export default function Invoice({
     const image = canvas.toDataURL("image/png");
 
     const link = document.createElement("a");
-    link.download = "invoice-002026.png";
+    link.download = "invoice-00"+ invoiceNumber +".png";
     link.href = image;
     link.click();
   };
