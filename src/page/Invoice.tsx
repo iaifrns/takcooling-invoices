@@ -1,6 +1,7 @@
 import html2canvas from "html2canvas";
 import { useMemo, useRef } from "react";
 import { MdArrowBack } from "react-icons/md";
+import LOGO from "../assets/logo.jpeg";
 
 type InvoiceItem = {
   description: string;
@@ -90,7 +91,7 @@ export default function Invoice({
           {/* Logo */}
           <div className="flex items-start justify-center sm:justify-start">
             <img
-              src="/takcooling-logo.png"
+              src={LOGO}
               alt="Takcooling HVAC"
               className="w-61.25 object-contain"
             />
